@@ -1,7 +1,6 @@
-import Data.EnglishGroup;
-import Data.MathGroup;
 import Data.Student;
 import Data.Teacher;
+import Data.TrainingGroup;
 
 public class CompanyMain {
     public static void main(String[] args) {
@@ -33,15 +32,17 @@ public class CompanyMain {
                 teachers[1]
         };
 
-        EnglishGroup englishGroup = new EnglishGroup(englishStudents, englishTeachers, "Angielski");
+        TrainingGroup englishGroup = new TrainingGroup(englishStudents, englishTeachers, "Angielski");
         englishGroup.showGroupInfo();
 
-        MathGroup mathGroup = new MathGroup(mathStudents, mathTeacher, "Matematyka");
+        TrainingGroup mathGroup = new TrainingGroup(mathStudents, mathTeacher, "Matematyka");
         mathGroup.showGroupInfo();
 
-        String[][] mathGrades = new String[2][5];
-        String[][] englishGrades = new String[2][5];
+        mathGroup.addGrade(0, 4);
+        students[0].showGrades(mathGroup, 0);
 
+        englishGroup.addGrade(0, 5);
+        students[0].showGrades(englishGroup, 0);
 
     }
 }
