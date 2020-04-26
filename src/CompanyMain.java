@@ -38,11 +38,6 @@ public class CompanyMain {
         TrainingGroup mathGroup = new TrainingGroup(mathStudents, mathTeacher, "Matematyka");
         mathGroup.showGroupInfo();
 
-        mathGroup.addGrade(0, 4);
-        students[0].showGrades(mathGroup, 0);
-
-        englishGroup.addGrade(0, 5);
-        students[0].showGrades(englishGroup, 0);
 
     }
 }

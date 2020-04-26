@@ -1,9 +1,9 @@
 package Data;
 
 public class TrainingGroup {
-    protected Student[] students;
-    protected Teacher[] teachers;
-    protected String subject;
+    Student[] students;
+    Teacher[] teachers;
+    String subject;
 
     public TrainingGroup(Student[] students, Teacher[] teachers, String subject) {
         this.students = students;
@@ -22,10 +22,5 @@ public class TrainingGroup {
         }
         System.out.println();
     }
-
-    public void addGrade(int studentIndex, int grade) {
-        students[studentIndex].grades = new Integer[1];
-        students[studentIndex].grades[0] = grade;
-    }
-
 }
+
