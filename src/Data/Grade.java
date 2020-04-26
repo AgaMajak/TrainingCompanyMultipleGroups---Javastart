@@ -8,4 +8,6 @@ public class Grade {
         this.grade = grade;
         this.trainingGroup = trainingGroup;
     }
+
+
 }

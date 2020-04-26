@@ -43,9 +43,16 @@ public class CompanyMain {
                 new Grade(4.5, mathGroup),
                 new Grade(3.5, mathGroup),
                 new Grade(5, englishGroup),
-                new Grade(4, englishGroup)
+                new Grade(4, englishGroup),
+                new Grade(3.5, mathGroup)
         };
 
-        students[0].showGrades(grades);
+        students[0].addGrade(grades[0]);
+        students[2].addGrade(grades[1]);
+        students[0].addGrade(grades[2]);
+        students[1].addGrade(grades[3]);
+        students[0].addGrade(grades[4]);
+
+        students[0].showGrades();
     }
 }
