@@ -1,3 +1,4 @@
+import Data.Grade;
 import Data.Student;
 import Data.Teacher;
 import Data.TrainingGroup;
@@ -38,6 +39,13 @@ public class CompanyMain {
         TrainingGroup mathGroup = new TrainingGroup(mathStudents, mathTeacher, "Matematyka");
         mathGroup.showGroupInfo();
 
+        Grade[] grades = {
+                new Grade(4.5, mathGroup),
+                new Grade(3.5, mathGroup),
+                new Grade(5, englishGroup),
+                new Grade(4, englishGroup)
+        };
 
+        students[0].showGrades(grades);
     }
 }
